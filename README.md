@@ -6,3 +6,7 @@
 ```bash
 ruby --version
 ```
+### Caso nao tenha 
+```bash
+https://rubyinstaller.org/downloads/
+```
