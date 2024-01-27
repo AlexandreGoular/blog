@@ -1,23 +1,16 @@
-User
 default: &default
-  adapter: mysql2
-  encoding: utf8mb4
+  adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password: bancodedados
-  socket: /var/run/mysqld/mysqld.sock
+  timeout: 5000
 
 development:
   <<: *default
-  database: new_blog_development
+  database: db/new_blog_development.sqlite3
 
 test:
   <<: *default
-  database: new_blog_test
-
+  database: db/new_blog_test.sqlite3
 
 production:
   <<: *default
-  database: new_blog_production
-  username: new_blog
-  password: <%= ENV["NEW_BLOG_DATABASE_PASSWORD"] %>
+  database: db/new_blog_production.sqlite3
