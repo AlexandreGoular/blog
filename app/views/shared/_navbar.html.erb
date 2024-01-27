@@ -1,0 +1,15 @@
+<nav>
+    <% if user_signed_in? %>
+        <p>User </p>
+        <%= current_user.email %> |
+    <% end %>
+    <%= link_to 'Home', root_path%> |
+    <% if user_signed_in? %>
+        <%= link_to 'Articles', articles_path %> | 
+        <%= link_to 'Deslogar', destroy_user_session_path, data: { turbo_method: :delete }%>
+    <% else %>
+        <%= link_to 'Login', new_user_session_path%>
+    <% end %>
+</nav>
+
+<hr>
