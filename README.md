@@ -2,5 +2,7 @@
 
 ## Como Executar
 
-### Tenha o ruby baixado na sua maquina
-`ruby --version`
+### Verifique se você tem o ruby baixado
+```bash
+ruby --version
+```
