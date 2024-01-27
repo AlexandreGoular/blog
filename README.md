@@ -11,8 +11,11 @@ git clone https://github.com/AlexandreGoular/blog
 ```bash
 ruby --version
 ```
-### Caso não tenha 
-<a href="https://rubyinstaller.org/downloads/">
+### Caso não tenha cole o link abaixo em seu browser/navegador
+```bash
+https://rubyinstaller.org/downloads/
+```
+
 
 ### Verifique se você tem o rails baixado
 ```bash
